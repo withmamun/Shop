@@ -409,6 +409,7 @@ a {
     width: 56px !important;
     padding: .35rem .45rem;
     flex: 0 0 auto;
+    text-align: center;
 }
 
 input::-webkit-outer-spin-button,
