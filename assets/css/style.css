@@ -1,0 +1,354 @@
+/* Base CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f0f0f0;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a:focus {
+    outline: 0 solid;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*-------------------- Header area css start --------------------*/
+
+.header__area {
+    background-color: #45C163;
+    padding: 13px 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+}
+
+.header__main__blk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.header__widgets span {
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.header__logo a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.header__search span {
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*-------------------- Header area css end --------------------*/
+
+
+/*-------------------- Menu area css start --------------------*/
+
+.menu__area {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.menu__main__blk ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.menu__main__blk ul li a {
+    font-size: 24px;
+    color: #999;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.menu__main__blk ul li a:hover {
+    color: #45C163;
+}
+
+/*-------------------- Menu area css end --------------------*/
+
+
+/*-------------------- Category area css start --------------------*/
+
+.category__area {
+    padding-top: 75px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.category__topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.category__topbar h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.category__topbar a {
+    color: #666;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.category__topbar a:hover {
+    color: #45C163;
+}
+
+.category__main__blk {
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 8px;
+    margin-right: -20px;
+    padding-right: 20px;
+}
+
+.category__img {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category__title a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.category__single__blk .category__title a:hover {
+    color: #45C163;
+}
+
+.category__title {
+    text-align: center;
+}
+
+.category__img img {
+    width: 100%;
+    height: auto;
+}
+
+.category__single__blk {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+/*-------------------- Category area css end --------------------*/
+
+
+/*-------------------- Product area css start --------------------*/
+
+.product__area {
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.product__main__blk {
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 10px;
+    margin-right: -20px;
+    padding-right: 20px;
+}
+
+.product__single__blk {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.product__img {
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__title {
+    text-align: center;
+}
+
+.product__title a {
+    font-size: 13px;
+    font-weight: 400;
+    color: #000;
+    text-transform: capitalize;
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    line-height: 15px;
+}
+
+.product__title a:hover {
+    color: #45C163;
+}
+
+.product__title a span {
+    color: #45C163;
+    font-weight: 500;
+}
+
+.product__fav {
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    z-index: 2;
+}
+
+.product__fav span {
+    color: #888;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.product__fav__red.active {
+    color: #ff0000 !important;
+}
+
+.product__add {
+    position: absolute;
+    right: 8px;
+    bottom: 3px;
+    z-index: 2;
+}
+
+.product__add span {
+    color: #888;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.product__add span:hover {
+    color: #45C163;
+}
+
+/*-------------------- Product area css end --------------------*/
+
+
+/*-------------------- Footer area css start --------------------*/
+
+.footer__area {
+    padding-bottom: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+}
+
+.footer__main__blk {
+    text-align: center;
+}
+
+.footer__main__blk ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer__main__blk ul li a {
+    color: #888;
+    font-size: 16px;
+    transition: .3s;
+}
+
+.footer__main__blk ul li a:hover {
+    color: #45C163;
+}
+
+.footer__main__blk span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #888;
+    display: block;
+    margin-top: 6px;
+}
+
+/*-------------------- Footer area css end --------------------*/
+
+
+/*-------------------- Default area css start --------------------*/
+/*-------------------- Default area css end --------------------*/
