@@ -156,6 +156,7 @@ a {
     padding-bottom: 8px;
     margin-right: -20px;
     padding-right: 20px;
+    scrollbar-width: none;
 }
 
 .category__img {
@@ -206,7 +207,7 @@ a {
 /*-------------------- Product area css start --------------------*/
 
 .product__area {
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -219,6 +220,7 @@ a {
     padding-bottom: 10px;
     margin-right: -20px;
     padding-right: 20px;
+    scrollbar-width: none;
 }
 
 .product__single__blk {
@@ -350,5 +352,73 @@ a {
 /*-------------------- Footer area css end --------------------*/
 
 
-/*-------------------- Default area css start --------------------*/
-/*-------------------- Default area css end --------------------*/
+/*-------------------- Modal area css start --------------------*/
+
+.modal-header {
+    padding: 10px 16px;
+}
+
+.modal-body {
+    padding: 5px 16px;
+}
+
+.modal-footer {
+    padding: 0px 10px 10px 5px;
+    border-top: none;
+}
+
+.modal-footer>* {
+    margin: 0;
+}
+
+.btn-primary {
+    background-color: #45C163;
+    border-color: #45C163;
+}
+
+.btn {
+    border: none;
+    padding: 8px 16px;
+}
+
+.btn-check:focus+.btn-primary,
+.btn-primary:focus {
+    color: #fff;
+    background-color: #158831;
+    border-color: #158831;
+    box-shadow: none;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #158831;
+    border-color: #158831;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545 !important;
+    border-color: transparent !important;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    padding: 0 !important;
+}
+
+.input-group .item-count {
+    width: 56px !important;
+    padding: .35rem .45rem;
+    flex: 0 0 auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/*-------------------- Modal area css end --------------------*/
