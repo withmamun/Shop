@@ -421,4 +421,9 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
+.form-control:focus {
+    border-color: #ced4da;
+    box-shadow: none;
+}
+
 /*-------------------- Modal area css end --------------------*/
